@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mybatis-simple-demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/mp_post?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root # 替换成你的MySQL密码
+
+mybatis-plus:
+  configuration:
+    # 开启驼峰命名转换: 将数据库的 user_name 映射到Java的 userName
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      # 声明主键是自增的
+      id-type: auto
